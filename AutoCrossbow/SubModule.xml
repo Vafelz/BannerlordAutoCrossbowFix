@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<Module>
+	<Name value = "AutoCrossbow"/>
+	<Id value = "AutoCrossbow"/>
+	<Version value = "v1.3.6"/>
+	<DefaultModule value="false"/>
+	<SingleplayerModule value="true"/>
+	<MultiplayerModule value="false"/>
+	<Official value="false"/>
+  
+	<DependedModules>
+		<DependedModule Id="Native"/>
+		<DependedModule Id="SandBoxCore"/>
+		<DependedModule Id="Sandbox"/>
+		<DependedModule Id="CustomBattle"/>
+		<DependedModule Id="StoryMode" />
+	</DependedModules>
+  
+  <SubModules>
+		<SubModule>
+			<Name value = "AutoCrossbow"/>
+			<DLLName value = "AutoCrossbow.dll"/>
+			<SubModuleClassType value="AutoCrossbow.SubModule"/>
+			<Tags>
+				<Tag key="DedicatedServerType" value="none"/>
+				<Tag key="IsNoRenderModeElement" value="false"/>
+			</Tags>
+		</SubModule>
+	</SubModules>
+  
+	<Xmls>
+		<XmlNode>
+			<XmlName id="Items" path="custom_items"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+			</IncludedGameTypes>
+		</XmlNode>
+	</Xmls>
+</Module>
